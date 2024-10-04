@@ -1,0 +1,49 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+    .hero{
+        @include flex(space-between, center);
+        
+.input{
+    height: 55px;
+    border: none;
+    background-color: $light-grey;
+}
+.btn{
+    background-color: $black;
+    color:#fff;
+    height: 55px;
+    width: 100px;
+    border-top-right-radius: 11%;
+    border-bottom-right-radius: 11%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#img{
+    background-color: black;
+    border-radius: 70px;
+    border: 18px solid black;
+    margin-bottom: 20px
+}
+
+.reviews{
+    @include flex(space-between, center);
+    gap:60px;
+    background-color: $light-grey;
+    border-radius: 11px;
+}
+
+.abt-reviews{
+    display: inline-block;
+    background-color: $light-grey;
+    gap:100px;
+    
+    
+}
+
+}
+.orange{
+    color: $primary-color;
+    
+}

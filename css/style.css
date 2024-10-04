@@ -1,9 +1,292 @@
+body {
+  width: 80%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: blueviolet;
+ul, li {
+  list-style: none;
+  gap: 25px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 80%;
+  height: 65px;
+}
+
+nav {
+  background-color: #F4F7FB;
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+nav .nav-center ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+nav .nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+nav .nav-right .fa-bars {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-center {
+    display: none;
+  }
+  .fa-bars {
+    display: inline-block;
+  }
+}
+a {
+  display: inline-block;
+}
+a:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+.hero .input {
+  height: 55px;
+  border: none;
+  background-color: #F4F7FB;
+}
+.hero .btn {
+  background-color: #000;
+  color: #fff;
+  height: 55px;
+  width: 100px;
+  border-top-right-radius: 11%;
+  border-bottom-right-radius: 11%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.hero #img {
+  background-color: black;
+  border-radius: 70px;
+  border: 18px solid black;
+  margin-bottom: 20px;
+}
+.hero .reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 60px;
+  background-color: #F4F7FB;
+  border-radius: 11px;
+}
+.hero .abt-reviews {
+  display: inline-block;
+  background-color: #F4F7FB;
+  gap: 100px;
+}
+
+.orange {
+  color: orange;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+.section ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+.h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  color: orange;
+}
+
+.special {
+  color: orange;
+  justify-content: center;
+}
+
+.meat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.abt-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+.abt-u {
+  background-color: #F4F7FB;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.btn-add {
+  padding: 15px;
+  background-color: #000;
+  color: #fff;
+}
+
+.view {
+  height: 40px;
+  margin-top: 10px;
+  width: 120px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  margin-right: 50%;
+  border-radius: 8%;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  width: 780px;
+}
+
+.abt-best {
+  background-color: #F4F7FB;
+}
+
+.abt-main {
+  background-color: #F4F7FB;
+}
+
+.the {
+  color: orange;
+}
+
+.why-img {
+  background-color: #000;
+  border-radius: 70px;
+  border: 18px solid black;
+  color: #fff;
+}
+
+.reasons {
+  color: orange;
+}
+
+.abt-reasons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 1.5em;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+.contact .help {
+  display: flex;
+  justify-content: center;
+  color: orange;
+  padding-top: 60px;
+}
+.contact .support {
+  color: orange;
+}
+.contact .abt-support {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.contact .abt-info {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.contact .info {
+  background-color: #F4F7FB;
+  display: inline-block;
+  width: 30%;
+  padding: 35px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  background-color: black;
+  color: #fff;
+  gap: 50px;
+  height: 300px;
+  padding: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home {
+  color: orange;
+}
+
+.sub {
+  background-color: orange;
+  color: #fff;
+  height: 44px;
+  border-radius: 5px;
+}
+
+.email {
+  height: 44px;
+  border: none;
+}
+
+.letter {
+  padding-bottom: 30px;
 }

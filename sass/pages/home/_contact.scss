@@ -1,0 +1,40 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+.contact{
+    
+    .help{
+        display: flex;
+        justify-content: center;
+        color: $primary-color;
+        padding-top: 60px;
+        
+    }
+
+    .support{
+        color: $primary-color;
+    }
+    .abt-support{
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+    .abt-info{
+        display: flex;
+        justify-content: center;
+        gap: 55px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .info{
+        background-color: $light-grey;
+        display: inline-block;
+        width:30%;
+        padding:35px;
+        
+        
+    }
+
+
+}

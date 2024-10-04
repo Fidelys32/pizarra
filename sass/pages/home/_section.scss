@@ -1,0 +1,64 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+
+.section{
+    @include flex(space-between,center);
+
+    ul{
+        @include flex(space-between,center);
+    
+    }
+
+
+}
+.h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.new{
+    display: flex;
+    justify-content: center;
+    color:$primary-color;
+}
+.special{
+    color:$primary-color;
+    justify-content: center;
+    
+}
+.meat{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.abt-menu{
+    @include flex(space-between, center)
+}
+.abt-u{
+    background-color: $light-grey;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+.btn-add{
+    padding: 15px;
+    background-color: $black;
+    color:#fff;
+}
+
+.view{
+    height: 40px;
+    margin-top: 10px;
+    width: 120px;
+    background-color: $primary-color;
+    color: #fff;
+    border:none;
+    margin-right: 50%;
+    border-radius: 8%;
+
+}

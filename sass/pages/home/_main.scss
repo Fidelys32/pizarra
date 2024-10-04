@@ -1,0 +1,43 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+.main{
+    // @include flex(space-between, center);
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 3em; 
+   width: 780px;
+
+
+}
+
+.abt-best{
+    background-color:$light-grey;
+    }
+
+.abt-main{
+    background-color:$light-grey;
+    
+}
+.the{
+    color: $primary-color;
+}
+
+.why-img{
+    background-color: $black;
+    border-radius: 70px;
+    border: 18px solid black;
+    color: #fff;
+}
+
+.reasons{
+    color: $primary-color;
+}
+.abt-reasons{
+    @include flex(space-between, center);
+    gap:1.5em;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+}
